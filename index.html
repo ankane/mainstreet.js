@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="typeaheadjs.css" rel="stylesheet">
+    <link href="demo.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <p class="lead text-muted text-center">The simplest address form ever</p>
+      <input id="address" name="address" type="text" placeholder="Address" autocomplete="off" class="form-control input-lg">
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="typeahead.bundle.min.js"></script>
+    <script src="mainstreet.js"></script>
+    <script>
+      $("#address").mainstreet();
+    </script>
+  </body>
+</html>
