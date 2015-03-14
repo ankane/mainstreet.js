@@ -6,6 +6,8 @@ The simplest address form ever.
 
 Built with Bootstrap, Typeahead.js, and a free [SmartyStreets](https://smartystreets.com/features) account.
 
+:house: Proof of concept
+
 ## Todo
 
 - mobile friendly
