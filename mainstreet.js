@@ -1,6 +1,6 @@
 (function($) {
   // TODO pass SmartyStreets id in initializer
-  var city, state, smartyStreetsAuthId = "1957475799958193041";
+  var city, state, smartyStreetsAuthId;
 
   // found at http://davidwalsh.name/javascript-debounce-function
   // from underscore.js
@@ -59,7 +59,8 @@
     }
   }
 
-  $.fn.mainstreet = function () {
+  $.fn.mainstreet = function (authId) {
+    smartyStreetsAuthId = authId;
     this.each( function () {
       var $this = $(this);
       $this.typeahead({}, {displayKey: "text", source: source});
